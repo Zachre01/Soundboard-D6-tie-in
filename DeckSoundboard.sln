@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeckSoundboard", "src\DeckSoundboard\DeckSoundboard.csproj", "{3D9BC176-39D8-4D9F-A1B3-8E83F9D29211}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeckSoundboard.D6Plugin", "src\DeckSoundboard.D6Plugin\DeckSoundboard.D6Plugin.csproj", "{BF62A932-A44A-4662-87A8-C1F88C42D113}"
+EndProject
+Global
+ GlobalSection(SolutionConfigurationPlatforms) = preSolution
+  Release|Any CPU = Release|Any CPU
+ EndGlobalSection
+ GlobalSection(ProjectConfigurationPlatforms) = postSolution
+  {3D9BC176-39D8-4D9F-A1B3-8E83F9D29211}.Release|Any CPU.ActiveCfg = Release|Any CPU
+  {3D9BC176-39D8-4D9F-A1B3-8E83F9D29211}.Release|Any CPU.Build.0 = Release|Any CPU
+  {BF62A932-A44A-4662-87A8-C1F88C42D113}.Release|Any CPU.ActiveCfg = Release|Any CPU
+  {BF62A932-A44A-4662-87A8-C1F88C42D113}.Release|Any CPU.Build.0 = Release|Any CPU
+ EndGlobalSection
+EndGlobal

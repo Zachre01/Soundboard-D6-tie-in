@@ -1,0 +1,24 @@
+{
+  "SDKVersion": 2,
+  "Author": "DeckSoundboard",
+  "Name": "DeckSoundboard",
+  "Description": "Trigger DeckSoundboard clips directly from FIFINE Control Deck without keyboard hotkeys.",
+  "Icon": "imgs/plugin",
+  "Version": "0.1.0",
+  "CodePathWin": "plugin/DeckSoundboard.D6Plugin.exe",
+  "Category": "DeckSoundboard",
+  "CategoryIcon": "imgs/category",
+  "Software": { "MinimumVersion": "2.9" },
+  "OS": [ { "Platform": "windows", "MinimumVersion": "10" } ],
+  "Actions": [
+    {
+      "UUID": "com.nichol.decksoundboard.sound",
+      "Name": "Sound Clip",
+      "Tooltip": "Trigger an assigned DeckSoundboard clip with automatic push-to-talk.",
+      "Icon": "imgs/sound",
+      "Controllers": ["Keypad"],
+      "States": [ { "Image": "imgs/sound", "TitleAlignment": "bottom", "FontSize": "9" } ],
+      "SupportedInMultiActions": false
+    }
+  ]
+}
