@@ -1,4 +1,4 @@
-# DeckSoundboard v0.1 test build
+# DeckSoundboard v0.1.3 test build
 
 A Windows soundboard controller designed for the FIFINE AmpliGame D6 / HotSpot StreamDock host.
 
