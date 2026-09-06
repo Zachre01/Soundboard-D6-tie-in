@@ -1,4 +1,4 @@
-# DeckSoundboard v0.1.3 test build
+# DeckSoundboard v0.1 test build
 
 A Windows soundboard controller designed for the FIFINE AmpliGame D6 / HotSpot StreamDock host.
 
@@ -87,7 +87,7 @@ No network service is exposed outside your PC.
 - D6 keys show a generic `SOUND` label in this first build; dynamic clip titles/icons are a planned next step once the D6 communication is confirmed.
 - Multi-key PTT combinations are not in the first test build.
 
-## v0.1.3 changes
+## v0.1.5 changes
 - PTT release is driven by the audio file's reported TotalTime, not PlaybackStopped.
 - Optional PTT tail delay is added after the full clip duration.
 - Same-button press still cancels the clip/timer and releases PTT immediately.
@@ -97,3 +97,11 @@ No network service is exposed outside your PC.
 - Installer also stops DeckSoundboard.D6Plugin before updating.
 - BUILD_AND_INSTALL exits cleanly after success so its command window does not keep the extracted folder open.
 - Added CLEANUP_OLD_VERSION.bat for stopping lingering DeckSoundboard processes.
+
+
+## v0.1.5
+Installer now captures the exact running FIFINE Control Deck / StreamDock executable path before closing it, then automatically relaunches that same executable after DeckSoundboard and its plugin are installed. Fallback install paths and Start Menu shortcut discovery are also included.
+
+
+## v0.1.5 playback/PTT change
+PTT release is no longer based on file duration metadata. The current playback session must actually finish before PTT is released, then the configured post-delay is applied. Stale stop events from older clips are ignored by session ID.
